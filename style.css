@@ -104,10 +104,6 @@ section{
     margin-bottom: .35rem;
 }
 
-.reviews{
-    margin: 1rem 0;
-}
-
 /* Card */
 .card{
     width: 100%;
@@ -159,6 +155,73 @@ section{
 
   /* Desktop ===================================================*/
 
-  @media screen and (min-width:960px){
-      
+  @media screen and (min-width:760px){
+      .social-section{
+          display: grid;
+          grid-template-columns: repeat(3,300px);
+          grid-gap: 1rem;
+          place-items: center;
+      }
+
+      .header{
+          width: 100%;
+          grid-column-start: 1;
+          grid-column-end: 4;
+          display: flex;
+          justify-content: space-between;
+        }
+
+    .headline{
+        width: 440px;
+    }
+
+      .title,.subtitle{
+          text-align: left;
+      }
+
+      .title{
+          font-size: 2.8rem;
+          line-height: 1;
+      }
+
+      .subtitle{
+          line-height: 1.8;
+      }
+
+      .stars{
+          width: unset;
+          margin: 0 1rem;
+      }
+
+      .rating{
+          text-align: left;
+          display: flex;
+          align-items: center;
+      }
+
+      .rating:nth-child(2){
+          transform: translateX(-2rem);
+      }
+
+      .rating:first-child{
+        transform: translateX(-4rem);
+      }
+
+    .card:nth-child(2){
+        /* transform: translateY(-1rem) */
+        margin-top: -1.5rem;
+    }
+    .card:last-child{
+        /* transform: translateY(1.5rem) */
+        margin-top: 1.5rem;
+    }
+
+    .attribution{
+        position: absolute;
+        bottom: 0;
+
+    }
+
+
   }
+
